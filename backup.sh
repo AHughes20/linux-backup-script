@@ -2,11 +2,6 @@
 # Author: AHughes20
 # Date: 2026-05-04
 
-# Configuration
-# backup /etc, /home, and maybe other dirs soon
-
-#script should run auto 2/day and also when executed manually
-
 if [ "$EUID" -ne 0 ]; then
     echo "run as root (sudo/su)"
     exit 1    # exit code 1 is used for user error(commonly missing input)
